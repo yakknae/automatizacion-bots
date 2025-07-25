@@ -6,6 +6,7 @@ import numpy as np
 import os
 import pandas as pd
 import logging
+import pyperclip
 
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -17,7 +18,7 @@ class FinalFantasy:
     def __init__(self):
         self.direccion = ""
         self.download_folder = os.path.join(os.path.expanduser("~"), "Downloads")
-        logging.info("Bot iniciado")
+        logging.info("--------------------- BOT INICIADO ---------------------")
 
     def abrir_navegador(self):
         try:
@@ -101,56 +102,63 @@ class FinalFantasy:
             logging.error(f"Error al tomar captura: {e}")
             return None
     
-    def buscar_imagen_en_pantalla(self, imagen_buscar, umbral=0.8):
+    def buscar_imagen_en_pantalla(self, imagen_buscar, confidence=0.8):
         try:
-            plantilla = cv2.imread(imagen_buscar,0)
-            pantalla = cv2.imread(self.tomar_foto(),0)
+            plantilla = cv2.imread(imagen_buscar, 0)
             if plantilla is None:
-                print(f"no se encontro la foto a buscar: {imagen_buscar}")
                 logging.error(f"No se encontró la imagen: {imagen_buscar}")
                 return None
-        
+
+            # Tomar captura
+            captura_path = self.tomar_foto()
+            if not captura_path:
+                return None
+            pantalla = cv2.imread(captura_path, 0)
+
+            # Buscar coincidencia
             resultado = cv2.matchTemplate(pantalla, plantilla, cv2.TM_CCOEFF_NORMED)
-            umbral_match = umbral
-            loc = np.where(resultado >= umbral_match)
+            min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(resultado)
 
-            pt = None
-            for pt in zip(*loc[::-1]):  # Obtenemos la primera coincidencia
-                break
-
-            if pt is not None:
-                # Coordenadas centrales de la imagen encontrada
-                centro_x = pt[0] + int(plantilla.shape[1]/2)
-                centro_y = pt[1] + int(plantilla.shape[0]/2)
-                print(f"Imagen encontrada en ({centro_x}, {centro_y})")
-                logging.info(f"Imagen encontrada en ({centro_x}, {centro_y})")
+            # max_val es el nivel de confianza de la mejor coincidencia
+            if max_val >= confidence:
+                centro_x = max_loc[0] + int(plantilla.shape[1] / 2)
+                centro_y = max_loc[1] + int(plantilla.shape[0] / 2)
+                logging.info(f"✅ Imagen encontrada con confianza {max_val:.3f} en ({centro_x}, {centro_y})")
                 return centro_x, centro_y
             else:
-                logging.warning(f"No se encontró coincidencia para: {imagen_buscar}")
-                print("No se encontró coincidencia.")
+                logging.warning(f"❌ No se encontró coincidencia. Máxima confianza: {max_val:.3f} < {confidence}")
                 return None
+
         except Exception as e:
             logging.error(f"Error al buscar imagen en pantalla: {e}")
             return None
 
-    def hacer_clic_en_imagen(self, ruta_imagen):
+    def hacer_clic_en_imagen(self, ruta_imagen, confidence=0.8):
         try:
-            posicion = self.buscar_imagen_en_pantalla(ruta_imagen)
-            if posicion:
-                x,y = posicion
-                pyautogui.moveTo(x,y)
+            logging.info(f"Buscando imagen con confianza {confidence}: {ruta_imagen}")
+
+            # Buscar centro de la imagen
+            location = pyautogui.locateCenterOnScreen(
+                ruta_imagen,
+                confidence=confidence
+            )
+
+            if location:
+                x, y = location
+                pyautogui.moveTo(x, y)
                 time.sleep(0.5)
                 pyautogui.click()
-                print("click hecho")
-                logging.info("Clic realizado con éxito.")
+                logging.info(f"✅ Clic realizado en ({x}, {y})")
+                return True
             else:
-                print("No se puede hacer clic, imagen no encontrada.")
-                logging.warning("No se encontró la imagen para hacer clic.")
-        except Exception as e:
-            logging.error(f"Error al hacer clic en imagen: {e}")
-            return False            
+                logging.warning(f"❌ No se encontró la imagen: {ruta_imagen}")
+                return False
 
-    def encontrar_archivo_descarga(self,nombre_parcela=None, extension=".xlsx"):
+        except Exception as e:
+            logging.error(f"❌ Error al hacer clic en imagen: {e}")
+            return False           
+
+    def encontrar_archivo_descarga(self, extension=".xlsx"):
         try:
             archivos = []
             for f in os.listdir(self.download_folder):
@@ -191,7 +199,52 @@ class FinalFantasy:
             print(f"error al modificar el archivo {e}")
             return None
 
+    def enviar_a_destinatario(self, destinatario, asunto, mensaje, ruta_adjunto):
+        try:
+            # Hacer clic en "Redactar"
+            if not self.hacer_clic_en_imagen("assets/gmail_assets/redactar.png"):
+                logging.error("No se encontró el botón de redactar.")
+                return False
+            time.sleep(2)
 
+            # Escribir destinatario
+            pyperclip.copy(destinatario)
+            pyautogui.hotkey('ctrl', 'v')
+            time.sleep(1)
+            pyautogui.press('tab')  # Al asunto
+
+            # Asunto
+            pyautogui.write(asunto,interval=0.2)
+            time.sleep(2)
+            pyautogui.press('tab')  # Al cuerpo
+
+            # Mensaje
+            pyperclip.copy(mensaje)
+            pyautogui.hotkey('ctrl', 'v')
+            time.sleep(2)
+
+            # Adjuntar
+            if not self.hacer_clic_en_imagen("assets/gmail_assets/adjunto.png"):
+                logging.error("No se encontró el botón de adjuntar.")
+                return False
+            time.sleep(3)
+
+            pyautogui.write(ruta_adjunto)
+            time.sleep(1)
+            pyautogui.press('enter')
+            time.sleep(3)
+
+            # Enviar
+            if not self.hacer_clic_en_imagen("assets/gmail_assets/enviar.png"):
+                logging.error("No se encontró el botón de enviar.")
+                return False
+
+            logging.info(f"✅ Correo enviado a: {destinatario}")
+            return True
+
+        except Exception as e:
+            logging.error(f"Error al enviar correo: {e}")
+            return False
 
 
 if __name__ == "__main__":
@@ -212,11 +265,27 @@ if __name__ == "__main__":
         time.sleep(5)
         bot.hacer_clic_en_imagen("assets/gmail_assets/grece1.png")
         time.sleep(4)
-        bot.hacer_clic_en_imagen("assets/gmail_assets/download1.png")
+        for _ in range(6):
+            pyautogui.press('tab')
+        time.sleep(4)
+        pyautogui.press('enter')
+        time.sleep(4)
+        for _ in range(2):
+            pyautogui.press('esc')
         time.sleep(2)
         archivo_excel = bot.encontrar_archivo_descarga(extension=".xlsx")
+        pyautogui.press('esc')
+        time.sleep(4)
+        pyautogui.press('esc')
         if archivo_excel:
-            bot.modificar_excel(archivo_excel,nueva_columna="estado",valor="automatizado") 
+           archivo_modificado = bot.modificar_excel(archivo_excel,nueva_columna="estado",valor="automatizado") 
+           if archivo_modificado:
+                 bot.enviar_a_destinatario(
+                    destinatario="grecekore@gmail.com",
+                    asunto="Excel galleta",
+                    mensaje="Hola, aquí está el archivo actualizado.",
+                    ruta_adjunto=archivo_modificado
+                )
         else:
             logging.warning("No se encontró el archivo Excel descargado.")
     except Exception as e:

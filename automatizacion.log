@@ -1,0 +1,210 @@
+2025-07-25 13:01:34,798 - INFO - Bot iniciado
+2025-07-25 13:01:34,799 - INFO - Abriendo navegador
+2025-07-25 13:01:36,866 - INFO - Navegador abierto
+2025-07-25 13:01:39,867 - INFO - Limpiando la barra de busqueda del navegador...
+2025-07-25 13:01:41,070 - INFO - Escribiendo direccion...
+2025-07-25 13:01:50,495 - INFO - captura guardada como: captura.png
+2025-07-25 13:01:50,564 - INFO - Imagen encontrada en (360, 118)
+2025-07-25 13:01:51,268 - INFO - Clic realizado con éxito.
+2025-07-25 13:02:02,529 - INFO - captura guardada como: captura.png
+2025-07-25 13:02:02,584 - INFO - Imagen encontrada en (616, 309)
+2025-07-25 13:02:03,292 - INFO - Clic realizado con éxito.
+2025-07-25 13:02:07,347 - INFO - captura guardada como: captura.png
+2025-07-25 13:02:07,398 - INFO - Imagen encontrada en (1838, 121)
+2025-07-25 13:02:08,104 - INFO - Clic realizado con éxito.
+2025-07-25 13:02:10,105 - INFO - Archivo encontrado: C:\Users\valen\Downloads\prueba_nesquik (1).xlsx
+2025-07-25 13:02:10,478 - INFO - Datos originales:
+  nombres  edad
+0    alan    16
+1    jose   124
+2  miguel    12
+2025-07-25 13:02:10,488 - INFO - Archivo modificado guardado: C:\Users\valen\Downloads\prueba_nesquik (1)_modificado.xlsx
+2025-07-25 13:02:10,557 - INFO - captura guardada como: captura.png
+2025-07-25 13:02:10,612 - WARNING - No se encontró coincidencia para: assets/gmail_assets/redactar.png
+2025-07-25 13:02:10,612 - WARNING - No se encontró la imagen para hacer clic.
+2025-07-25 13:02:10,613 - ERROR - No se encontró el botón de redactar.
+2025-07-25 13:04:47,605 - INFO - Bot iniciado
+2025-07-25 13:04:47,605 - INFO - Abriendo navegador
+2025-07-25 13:04:49,666 - INFO - Navegador abierto
+2025-07-25 13:04:52,666 - INFO - Limpiando la barra de busqueda del navegador...
+2025-07-25 13:04:53,870 - INFO - Escribiendo direccion...
+2025-07-25 13:05:03,272 - INFO - captura guardada como: captura.png
+2025-07-25 13:05:03,335 - INFO - Imagen encontrada en (360, 118)
+2025-07-25 13:05:04,040 - INFO - Clic realizado con éxito.
+2025-07-25 13:05:15,305 - INFO - captura guardada como: captura.png
+2025-07-25 13:05:15,363 - INFO - Imagen encontrada en (616, 309)
+2025-07-25 13:05:16,070 - INFO - Clic realizado con éxito.
+2025-07-25 13:05:20,128 - INFO - captura guardada como: captura.png
+2025-07-25 13:05:20,184 - INFO - Imagen encontrada en (1824, 65)
+2025-07-25 13:05:20,888 - INFO - Clic realizado con éxito.
+2025-07-25 13:05:25,091 - INFO - Archivo encontrado: C:\Users\valen\Downloads\prueba_nesquik (1)_modificado.xlsx
+2025-07-25 13:05:25,268 - INFO - Datos originales:
+  nombres  edad        estado
+0    alan    16  automatizado
+1    jose   124  automatizado
+2  miguel    12  automatizado
+2025-07-25 13:05:25,276 - INFO - Archivo modificado guardado: C:\Users\valen\Downloads\prueba_nesquik (1)_modificado_modificado.xlsx
+2025-07-25 13:05:25,337 - INFO - captura guardada como: captura.png
+2025-07-25 13:05:25,396 - WARNING - No se encontró coincidencia para: assets/gmail_assets/redactar.png
+2025-07-25 13:05:25,396 - WARNING - No se encontró la imagen para hacer clic.
+2025-07-25 13:05:25,397 - ERROR - No se encontró el botón de redactar.
+2025-07-25 13:14:16,322 - INFO - Bot iniciado
+2025-07-25 13:14:16,322 - INFO - Abriendo navegador
+2025-07-25 13:14:18,392 - INFO - Navegador abierto
+2025-07-25 13:14:21,393 - INFO - Limpiando la barra de busqueda del navegador...
+2025-07-25 13:14:22,596 - INFO - Escribiendo direccion...
+2025-07-25 13:14:31,916 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/buscar.png
+2025-07-25 13:14:32,720 - INFO - ✅ Clic realizado en (360, 118)
+2025-07-25 13:14:43,925 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/grece1.png
+2025-07-25 13:14:44,708 - INFO - ✅ Clic realizado en (616, 309)
+2025-07-25 13:14:48,708 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/download1.png
+2025-07-25 13:14:49,484 - INFO - ✅ Clic realizado en (1824, 65)
+2025-07-25 13:14:53,687 - INFO - Archivo encontrado: C:\Users\valen\Downloads\prueba_nesquik (1)_modificado_modificado.xlsx
+2025-07-25 13:14:53,860 - INFO - Datos originales:
+  nombres  edad        estado
+0    alan    16  automatizado
+1    jose   124  automatizado
+2  miguel    12  automatizado
+2025-07-25 13:14:53,871 - INFO - Archivo modificado guardado: C:\Users\valen\Downloads\prueba_nesquik (1)_modificado_modificado_modificado.xlsx
+2025-07-25 13:14:53,871 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/redactar.png
+2025-07-25 13:14:53,950 - ERROR - ❌ Error al hacer clic en imagen: 
+2025-07-25 13:14:53,951 - ERROR - No se encontró el botón de redactar.
+2025-07-25 13:18:06,142 - INFO - Bot iniciado
+2025-07-25 13:18:06,142 - INFO - Abriendo navegador
+2025-07-25 13:18:08,204 - INFO - Navegador abierto
+2025-07-25 13:18:11,205 - INFO - Limpiando la barra de busqueda del navegador...
+2025-07-25 13:18:12,408 - INFO - Escribiendo direccion...
+2025-07-25 13:18:21,729 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/buscar.png
+2025-07-25 13:18:22,522 - INFO - ✅ Clic realizado en (360, 118)
+2025-07-25 13:18:33,728 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/grece1.png
+2025-07-25 13:18:34,503 - INFO - ✅ Clic realizado en (616, 309)
+2025-07-25 13:18:38,504 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/download1.png
+2025-07-25 13:18:39,273 - INFO - ✅ Clic realizado en (1824, 65)
+2025-07-25 13:24:05,115 - INFO - Bot iniciado
+2025-07-25 13:24:05,115 - INFO - Abriendo navegador
+2025-07-25 13:24:07,183 - INFO - Navegador abierto
+2025-07-25 13:24:10,184 - INFO - Limpiando la barra de busqueda del navegador...
+2025-07-25 13:24:11,388 - INFO - Escribiendo direccion...
+2025-07-25 13:24:20,708 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/buscar.png
+2025-07-25 13:24:21,509 - INFO - ✅ Clic realizado en (360, 118)
+2025-07-25 13:24:32,714 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/grece1.png
+2025-07-25 13:24:33,497 - INFO - ✅ Clic realizado en (616, 309)
+2025-07-25 13:24:52,405 - INFO - Archivo encontrado: C:\Users\valen\Downloads\prueba_nesquik (3).xlsx
+2025-07-25 13:24:56,772 - INFO - Datos originales:
+  nombres  edad
+0    alan    16
+1    jose   124
+2  miguel    12
+2025-07-25 13:24:56,780 - INFO - Archivo modificado guardado: C:\Users\valen\Downloads\prueba_nesquik (3)_modificado.xlsx
+2025-07-25 13:24:56,780 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/redactar.png
+2025-07-25 13:24:57,563 - INFO - ✅ Clic realizado en (80, 187)
+2025-07-25 13:25:03,082 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/adjunto.png
+2025-07-25 13:25:03,860 - INFO - ✅ Clic realizado en (1423, 999)
+2025-07-25 13:25:11,090 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/enviar.png
+2025-07-25 13:25:11,866 - INFO - ✅ Clic realizado en (1312, 998)
+2025-07-25 13:25:11,866 - INFO - ✅ Correo enviado a: grecekore@gmail.ocm
+2025-07-25 13:29:00,539 - INFO - --------------------- BOT INICIADO ---------------------
+2025-07-25 13:29:00,540 - INFO - Abriendo navegador
+2025-07-25 13:29:02,602 - INFO - Navegador abierto
+2025-07-25 13:29:05,603 - INFO - Limpiando la barra de busqueda del navegador...
+2025-07-25 13:29:06,807 - INFO - Escribiendo direccion...
+2025-07-25 13:29:16,127 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/buscar.png
+2025-07-25 13:29:16,917 - INFO - ✅ Clic realizado en (360, 118)
+2025-07-25 13:29:28,122 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/grece1.png
+2025-07-25 13:29:28,910 - INFO - ✅ Clic realizado en (616, 309)
+2025-07-25 13:29:43,818 - INFO - Archivo encontrado: C:\Users\valen\Downloads\prueba_nesquik (4).xlsx
+2025-07-25 13:29:48,205 - INFO - Datos originales:
+  nombres  edad
+0    alan    16
+1    jose   124
+2  miguel    12
+2025-07-25 13:29:48,214 - INFO - Archivo modificado guardado: C:\Users\valen\Downloads\prueba_nesquik (4)_modificado.xlsx
+2025-07-25 13:29:48,215 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/redactar.png
+2025-07-25 13:29:49,006 - INFO - ✅ Clic realizado en (80, 187)
+2025-07-25 13:30:11,756 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/adjunto.png
+2025-07-25 13:30:12,533 - INFO - ✅ Clic realizado en (1423, 999)
+2025-07-25 13:30:19,764 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/enviar.png
+2025-07-25 13:30:20,545 - INFO - ✅ Clic realizado en (1312, 998)
+2025-07-25 13:30:20,546 - INFO - ✅ Correo enviado a: grecekore@gmail.ocm
+2025-07-25 13:30:58,680 - INFO - --------------------- BOT INICIADO ---------------------
+2025-07-25 13:30:58,680 - INFO - Abriendo navegador
+2025-07-25 13:31:00,743 - INFO - Navegador abierto
+2025-07-25 13:31:03,743 - INFO - Limpiando la barra de busqueda del navegador...
+2025-07-25 13:31:04,948 - INFO - Escribiendo direccion...
+2025-07-25 13:31:14,269 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/buscar.png
+2025-07-25 13:31:15,071 - INFO - ✅ Clic realizado en (360, 118)
+2025-07-25 13:31:26,278 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/grece1.png
+2025-07-25 13:31:27,059 - INFO - ✅ Clic realizado en (616, 309)
+2025-07-25 13:31:41,969 - INFO - Archivo encontrado: C:\Users\valen\Downloads\prueba_nesquik (5).xlsx
+2025-07-25 13:31:46,346 - INFO - Datos originales:
+  nombres  edad
+0    alan    16
+1    jose   124
+2  miguel    12
+2025-07-25 13:31:46,355 - INFO - Archivo modificado guardado: C:\Users\valen\Downloads\prueba_nesquik (5)_modificado.xlsx
+2025-07-25 13:31:46,355 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/redactar.png
+2025-07-25 13:31:47,143 - INFO - ✅ Clic realizado en (80, 187)
+2025-07-25 13:33:56,041 - INFO - --------------------- BOT INICIADO ---------------------
+2025-07-25 13:33:56,042 - INFO - Abriendo navegador
+2025-07-25 13:33:58,107 - INFO - Navegador abierto
+2025-07-25 13:34:01,107 - INFO - Limpiando la barra de busqueda del navegador...
+2025-07-25 13:34:02,311 - INFO - Escribiendo direccion...
+2025-07-25 13:34:11,632 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/buscar.png
+2025-07-25 13:34:12,426 - INFO - ✅ Clic realizado en (360, 118)
+2025-07-25 13:34:23,631 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/grece1.png
+2025-07-25 13:34:24,425 - INFO - ✅ Clic realizado en (616, 309)
+2025-07-25 13:34:39,333 - INFO - Archivo encontrado: C:\Users\valen\Downloads\prueba_nesquik (6).xlsx
+2025-07-25 13:34:43,708 - INFO - Datos originales:
+  nombres  edad
+0    alan    16
+1    jose   124
+2  miguel    12
+2025-07-25 13:34:43,717 - INFO - Archivo modificado guardado: C:\Users\valen\Downloads\prueba_nesquik (6)_modificado.xlsx
+2025-07-25 13:34:43,717 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/redactar.png
+2025-07-25 13:34:44,497 - INFO - ✅ Clic realizado en (80, 187)
+2025-07-25 13:39:14,704 - INFO - --------------------- BOT INICIADO ---------------------
+2025-07-25 13:39:14,704 - INFO - Abriendo navegador
+2025-07-25 13:39:16,768 - INFO - Navegador abierto
+2025-07-25 13:39:19,768 - INFO - Limpiando la barra de busqueda del navegador...
+2025-07-25 13:39:20,971 - INFO - Escribiendo direccion...
+2025-07-25 13:39:30,292 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/buscar.png
+2025-07-25 13:39:31,092 - INFO - ✅ Clic realizado en (360, 118)
+2025-07-25 13:39:42,297 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/grece1.png
+2025-07-25 13:39:43,086 - INFO - ✅ Clic realizado en (616, 309)
+2025-07-25 13:39:57,994 - INFO - Archivo encontrado: C:\Users\valen\Downloads\prueba_nesquik (1).xlsx
+2025-07-25 13:40:02,365 - INFO - Datos originales:
+  nombres  edad
+0    alan    16
+1    jose   124
+2  miguel    12
+2025-07-25 13:40:02,373 - INFO - Archivo modificado guardado: C:\Users\valen\Downloads\prueba_nesquik (1)_modificado.xlsx
+2025-07-25 13:40:02,374 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/redactar.png
+2025-07-25 13:40:03,159 - INFO - ✅ Clic realizado en (80, 187)
+2025-07-25 13:40:21,107 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/adjunto.png
+2025-07-25 13:40:21,892 - INFO - ✅ Clic realizado en (1423, 999)
+2025-07-25 13:40:29,122 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/enviar.png
+2025-07-25 13:40:29,897 - INFO - ✅ Clic realizado en (1312, 998)
+2025-07-25 13:40:29,898 - INFO - ✅ Correo enviado a: grecekore@gmail.com
+2025-07-25 13:41:25,854 - INFO - --------------------- BOT INICIADO ---------------------
+2025-07-25 13:41:25,854 - INFO - Abriendo navegador
+2025-07-25 13:41:27,917 - INFO - Navegador abierto
+2025-07-25 13:41:30,917 - INFO - Limpiando la barra de busqueda del navegador...
+2025-07-25 13:41:32,121 - INFO - Escribiendo direccion...
+2025-07-25 13:41:41,441 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/buscar.png
+2025-07-25 13:41:42,235 - INFO - ✅ Clic realizado en (360, 118)
+2025-07-25 13:41:53,441 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/grece1.png
+2025-07-25 13:41:54,223 - INFO - ✅ Clic realizado en (616, 309)
+2025-07-25 13:42:09,131 - INFO - Archivo encontrado: C:\Users\valen\Downloads\prueba_nesquik (2).xlsx
+2025-07-25 13:42:13,507 - INFO - Datos originales:
+  nombres  edad
+0    alan    16
+1    jose   124
+2  miguel    12
+2025-07-25 13:42:13,516 - INFO - Archivo modificado guardado: C:\Users\valen\Downloads\prueba_nesquik (2)_modificado.xlsx
+2025-07-25 13:42:13,516 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/redactar.png
+2025-07-25 13:42:14,307 - INFO - ✅ Clic realizado en (80, 187)
+2025-07-25 13:42:24,429 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/adjunto.png
+2025-07-25 13:42:25,210 - INFO - ✅ Clic realizado en (1423, 999)
+2025-07-25 13:42:32,439 - INFO - Buscando imagen con confianza 0.8: assets/gmail_assets/enviar.png
+2025-07-25 13:42:33,223 - INFO - ✅ Clic realizado en (1312, 998)
+2025-07-25 13:42:33,223 - INFO - ✅ Correo enviado a: grecekore@gmail.com
